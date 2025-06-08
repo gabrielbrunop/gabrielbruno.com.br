@@ -53,7 +53,7 @@ function ProfileImage({ src, alt }: { src: string; alt: string }) {
   return (
     <div className="relative group">
       <div className="absolute -inset-4 bg-gradient-to-r from-emerald-500 via-purple-500 to-pink-500 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-500" />
-      <div className="relative size-64 lg:size-80 rounded-full overflow-hidden border border-white/10 backdrop-blur-sm bg-white/5 shadow-2xl">
+      <div className="relative size-64 lg:size-96 rounded-full overflow-hidden border border-white/10 backdrop-blur-sm bg-white/5 shadow-2xl">
         <Image
           src={src}
           alt={alt}
@@ -261,10 +261,7 @@ export default function Home() {
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center p-4 sm:p-8">
         <div className="max-w-6xl w-full mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-            <ProfileImage
-              src="/avatar.jpeg?height=400&width=400"
-              alt="Gabriel Bruno"
-            />
+            <ProfileImage src="/avatar.png" alt="Gabriel Bruno" />
             <HeroContent
               firstName="Gabriel"
               lastName="Bruno"
