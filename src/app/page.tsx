@@ -4,6 +4,7 @@ import { Github, Linkedin, Heart, ArrowUpRight } from "lucide-react";
 import { Button } from "@/_components/ui/Button";
 import { cn } from "@/_lib/utils";
 import { XLogo } from "@/_components/XLogo";
+import Link from "next/link";
 
 function FloatingOrb({
   className,
@@ -269,8 +270,13 @@ export default function Home() {
               description={
                 <>
                   Computer enthusiast. Creator of{" "}
-                  <span className="text-emerald-400 font-semibold">Tenda</span>,
-                  a programming language designed for Portuguese speakers.
+                  <Link
+                    href="https://tenda.dev"
+                    className="text-emerald-400 font-semibold"
+                  >
+                    Tenda
+                  </Link>
+                  , a programming language designed for Portuguese speakers.
                 </>
               }
               socialLinks={socialLinks}
